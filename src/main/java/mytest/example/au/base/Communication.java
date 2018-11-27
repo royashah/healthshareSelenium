@@ -53,10 +53,13 @@ public class Communication {
             case "Linux":
                 setProperties("/Drivers/chromedriver_linux");
                 return new ChromeDriver();
-            case "Windows":
+            case "Windows 7":
                 setProperties("/Drivers/chromedriver.exe");
                 return new ChromeDriver();
-            case "MacOS":
+            case "Windows 10":
+                setProperties("/Drivers/chromedriver.exe");
+                return new ChromeDriver();
+            case "Mac OS X":
                 setProperties("/Drivers/chromedriver_mac");
                 return new ChromeDriver();
             default:
