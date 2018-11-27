@@ -68,7 +68,7 @@ public class Communication {
     }
 
     private static void setProperties(String fileName){
-        String driverPath = Communication.class.getResource(fileName).getPath();
+        String driverPath = Communication.class.getResource(fileName).getPath().replaceAll("%20", " ");
         System.setProperty("webdriver.chrome.driver" , driverPath);
     }
 }
